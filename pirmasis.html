@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Template</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/foundation.css" />
+        <link rel="stylesheet" href="css/motion-ui.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="js/vendor/modernizr.js"></script>
+    </head>
+    <body>
+        
+        <div class="container">
+        <div class="row">
+        
+            <div id="pirmas" class=" col-lg-12 navbar-fixed-top" style="background-color: black;">
+              <ul class="topnav">
+                    <a href="pirmasis.html">
+                <img src="pav/logo.jpg" class="logo" /></a>
+                        <li>
+                            <a href="pagalba.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Susisiekime</a>
+                        </li>
+                        <li>
+                            <a href="apie.html"><span class="glyphicon glyphicon-user " aria-hidden="true"></span> Apie mus</a>
+                        </li>
+                  <li>
+                            <a href="renginiai.html"><span class="glyphicon glyphicon-glass " aria-hidden="true"></span> Renginiai</a>
+                        </li>
+                    </ul>                     
+                </div>
+                <!-- End Header and Nav -->
+                <!-- First Band (Slider) -->
+                <div class="row">
+                    <div class="col-lg-12 hidden-xs" class="large-12 columns">
+                        <div id="slider">
+                            <br>
+                            <br>
+                            <img src="pav/collage.jpg" />
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+                <!-- Three-up Content Blocks -->
+            
+            
+                <div class="col-lg-7 col-md-7 col-sm-12; col-xs-12"class="stilius"  id="gallery" class="cf" style=" color:white">
+                    <h5>MUZIKOS STILIUS</h5>
+                   
+    <br>
+  <a href="antras.html" class="gallery-slide">
+    <img src="pav/pop.jpg">
+    
+  </a>
+  <a href="elektronine.html" class="gallery-slide">
+    <img src="pav/elektronine.jpg">
+  </a>
+                   
+  <a href="rokas.html" class="gallery-slide">
+    <img src="pav/rokas.jpg">
+  </a>
+
+    <a href="dziazas.html" class="gallery-slide">
+    <img src="pav/jazz.jpg">
+  </a>
+  
+</div>
+                        
+                 
+                <div  class="col-lg-4 col-md-4 hidden-sm hidden-xs" id="renginiai" style="background-color: black">
+                      <h4>            ARTĖJANTYS RENGINIAI</h4>
+                    <img src="pav/pirmas.jpg" class="event" />
+                    <p>Royksopp, Kalnų parkas</p>
+                    <br>
+                    <img src="pav/rsz_2event.jpg" class="event" />
+                    <p>DPlius Plius Plius Showcase</p>
+                    <br>
+                    <img src="pav/rsz_113event.jpg" class="event" />
+                    <p>Africa Night, 2017</p>
+                    <br>
+                    <img src="pav/event4.jpg" class="event" />
+                    <p>Kablys x Devilstone 2017</p>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="renginiai.html" class="button" style="vertical-align:middle">Plačiau</a>
+                </div>
+                <!-- Call to Action Panel -->
+                <div class="row">
+                    
+                    
+                    <div class="col-lg-7 col-md-7 col-sm-12; col-xs-12" class="kaina" style="background-color: black">
+                        <br>
+                       <br>
+                        <br>
+                        <br>
+                        <h5>KAINA</h5>
+                        <br>
+                        <p>      Vilniaus mieste yra šimtai įvairių vietų, tačiau kur eiti, jeigu nenori išleisti viso mėnesio atlyginimo? Ir atvirkščiai- kur eiti, jeigu nori prabangiai praleisti vakarą? </p>
+                        <p>      Šioje skiltyje sužinosite TOP pigiausius ir prabangiausius vakaro praleidimo būdus Vilniaus mieste</p>
+                        <br>
+                     
+                        <a href="kaina.html" class="button">Plačiau</a>
+                  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer  class="row">
+            <div class="col-lg-12 columns">
+                <hr />
+                
+                 
+                        <p>© Agnė Juškaitė,MKDf-15/3,VGTU "Interneto puslapių dizainas", 2017. <a href="pirmasis.html">Pagrindinis psl.</a></p>
+                   
+                  
+                
+            </div>
+        </footer>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/motion-ui.min.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script>
+      $(document).foundation();
+    </script>
+        <script>
+     $(document).ready(function(){
+  fitui();
+});
+$(window).resize(function(){
+  fitui();
+});
+function fitui(){ 
+  setTimeout(function(){
+    var winwid = $(window).width(),
+      winhei = $(window).height(),
+      gswid = $('.gallery-slide').outerWidth(),
+      gshei = $('.gallery-slide').outerHeight();
+  $('.gallery-slide').outerHeight(gswid);
+    $('#gallery').css('font-size',gswid * 0.09);
+    $('.gallery-caption').css('line-height',gshei/2+'px');
+  },500);
+}
+    
+        </script>
+    </body>
+</html>
